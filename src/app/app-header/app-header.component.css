@@ -1,0 +1,22 @@
+.app-header{
+    background-color: teal;
+}
+
+.app-header-name{
+    font-size: 3em;
+    color: white;
+    margin-top: 1%;
+}
+
+.app-header-role{
+    font-size: 1em;
+    color: gainsboro;
+    margin-top: 0.5%;
+}
+
+.app-header-contact{
+    font-size: 1em;
+    color: gainsboro;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
