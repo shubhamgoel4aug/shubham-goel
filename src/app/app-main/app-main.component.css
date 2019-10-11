@@ -1,10 +1,12 @@
 .app-main{
-    margin-top: 100px;
+    padding-top: 100px;
+    box-shadow: 0px 1px 10px black;
+    background-color: black;
 }
 
 .app-main-features{
     font-size: 2em;
-    color: black;
+    color: white;
     text-align: center;
     margin-top: 0px;
     padding: 10px;
@@ -12,5 +14,5 @@
 }
 
 .app-main-features:hover{
-    color: olive;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }

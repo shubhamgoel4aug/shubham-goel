@@ -1,29 +1,36 @@
-.app-header{
+.app-header {
     background-color: black;
     padding-bottom: 1%;
     box-shadow: 0px 1px 10px black;
 }
 
-.app-header-information{
+.app-header-information {
     margin-top: 5px;
 }
 
-.app-header-name{
+.app-header-menu {
+    margin-top: 50px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.app-header-name {
     font-size: 3em;
     color: white;
 }
 
-.app-header-role{
+.app-header-role {
     font-size: 1em;
     color: white;
 }
 
-.app-header-contact{
+.app-header-contact {
     font-size: 1em;
     color: white;
 }
 
-.app-header-image{
+.app-header-image {
     width: 100px;
     height: 100px;
     border-radius: 100px;
