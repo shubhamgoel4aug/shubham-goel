@@ -36,3 +36,56 @@
     border-radius: 100px;
     margin-top: 10%;
 }
+
+.app-header-menu-options {
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.app-header-menu-options-introduction {
+    color: greenyellow;
+}
+
+.app-header-menu-options-introduction:hover {
+    text-shadow: 0px 0px 20px greenyellow, 0px 0px 10px red;
+}
+
+.app-header-menu-options-education {
+    color: darkorange;
+}
+
+.app-header-menu-options-education:hover {
+    text-shadow: 0px 0px 20px darkorange, 0px 0px 10px red;
+}
+
+.app-header-menu-options-experience {
+    color: magenta;
+}
+
+.app-header-menu-options-experience:hover {
+    text-shadow: 0px 0px 20px magenta, 0px 0px 10px red;
+}
+
+.app-header-menu-options-technologies {
+    color: peru;
+}
+
+.app-header-menu-options-technologies:hover {
+    text-shadow: 0px 0px 20px peru, 0px 0px 10px red;
+}
+
+.app-header-menu-options-achievements {
+    color: deepskyblue;
+}
+
+.app-header-menu-options-achievements:hover {
+    text-shadow: 0px 0px 20px deepskyblue, 0px 0px 10px red;
+}
+
+.app-header-menu-options-hobbies {
+    color: gold;
+}
+
+.app-header-menu-options-hobbies:hover {
+    text-shadow: 0px 0px 20px gold, 0px 0px 10px red;
+}
