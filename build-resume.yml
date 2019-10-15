@@ -9,6 +9,13 @@ jobs:
     vmImage: 'windows-latest'
   steps:
   - powershell:
-      Write-Host "Hello World"
-    displayName: "Test"
+      npm install
+    displayName: Restore npm modules
 
+  - powershell:
+      npm install -g @angular/cli@8.3.6
+    displayName: Install angular cli tools
+
+  - powershell:
+      ng build --prod
+    displayName: Build angular application
