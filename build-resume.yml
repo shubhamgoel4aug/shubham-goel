@@ -37,6 +37,7 @@ jobs:
       TargetFolder: '$(Build.BinariesDirectory)'
 
   - task: ArchiveFiles@2
+    displayName: Archive application
     inputs:
       rootFolderOrFile: '$(Build.BinariesDirectory)'
       includeRootFolder: true
@@ -45,6 +46,7 @@ jobs:
       replaceExistingArchive: true
 
   - task: PublishBuildArtifacts@1
+    displayName: Publish application artifact
     inputs:
       PathtoPublish: '$(Build.BinariesDirectory)'
       ArtifactName: 'Resume'
