@@ -1,0 +1,91 @@
+.app-header {
+    background-color: black;
+    padding-bottom: 1%;
+    box-shadow: 0px 1px 10px black;
+}
+
+.app-header-information {
+    margin-top: 5px;
+}
+
+.app-header-menu {
+    margin-top: 50px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.app-header-name {
+    font-size: 3em;
+    color: white;
+}
+
+.app-header-role {
+    font-size: 1em;
+    color: white;
+}
+
+.app-header-contact {
+    font-size: 1em;
+    color: white;
+}
+
+.app-header-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 10%;
+}
+
+.app-header-menu-options {
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.app-header-menu-options-introduction {
+    color: greenyellow;
+}
+
+.app-header-menu-options-introduction:hover {
+    text-shadow: 0px 0px 20px greenyellow, 0px 0px 10px red;
+}
+
+.app-header-menu-options-education {
+    color: darkorange;
+}
+
+.app-header-menu-options-education:hover {
+    text-shadow: 0px 0px 20px darkorange, 0px 0px 10px red;
+}
+
+.app-header-menu-options-experience {
+    color: magenta;
+}
+
+.app-header-menu-options-experience:hover {
+    text-shadow: 0px 0px 20px magenta, 0px 0px 10px red;
+}
+
+.app-header-menu-options-technologies {
+    color: peru;
+}
+
+.app-header-menu-options-technologies:hover {
+    text-shadow: 0px 0px 20px peru, 0px 0px 10px red;
+}
+
+.app-header-menu-options-achievements {
+    color: deepskyblue;
+}
+
+.app-header-menu-options-achievements:hover {
+    text-shadow: 0px 0px 20px deepskyblue, 0px 0px 10px red;
+}
+
+.app-header-menu-options-hobbies {
+    color: gold;
+}
+
+.app-header-menu-options-hobbies:hover {
+    text-shadow: 0px 0px 20px gold, 0px 0px 10px red;
+}

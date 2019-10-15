@@ -1,0 +1,14 @@
+variables:
+- name: Build.Clean
+  value: true
+
+jobs:
+- job: build_resume
+  displayName: Build Resume
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - powershell:
+      Write-Host "Hello World"
+    displayName: "Test"
+
