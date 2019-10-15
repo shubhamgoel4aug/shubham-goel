@@ -20,6 +20,20 @@ jobs:
       ng build --prod
     displayName: Build angular application
 
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/dist'
+      Contents: '**'
+      TargetFolder: '$(Build.BinariesDirectory)'
+      CleanTargetFolder: true
+      OverWrite: true
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)'
+      Contents: 'firebase.json'
+      TargetFolder: '$(Build.BinariesDirectory)'
+
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(Build.SourcesDirectory)/dist/WebResume'
