@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuComponentTracker} from '../models/menu-component-tracker.model'
 
 @Component({
   selector: 'app-main',
@@ -6,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-main.component.css']
 })
 export class AppMainComponent implements OnInit {
-
-  constructor() { }
+  constructor(private appMainCurrentMenu: MenuComponentTracker) { }
 
   ngOnInit() {
   }
