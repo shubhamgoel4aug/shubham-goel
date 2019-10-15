@@ -19,3 +19,17 @@ jobs:
   - powershell:
       ng build --prod
     displayName: Build angular application
+
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(Build.SourcesDirectory)/dist/WebResume'
+      includeRootFolder: true
+      archiveType: 'zip'
+      archiveFile: '$(Build.BinariesDirectory)/Resume.zip'
+      replaceExistingArchive: true
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.BinariesDirectory)'
+      ArtifactName: 'Resume'
+      publishLocation: 'Container'
