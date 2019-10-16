@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuComponentTracker } from '../models/menu-component-tracker.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,33 +8,33 @@ import { MenuComponentTracker } from '../models/menu-component-tracker.model';
 })
 export class AppHeaderComponent implements OnInit {
 
-  constructor(private appMainCurrentMenu: MenuComponentTracker) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   menu_introduction_click() {
-    this.appMainCurrentMenu.AppMainCurrentMenuComponent = "IntroductionComponent";
+    this.router.navigateByUrl('');
   }
 
   menu_education_click() {
-    this.appMainCurrentMenu.AppMainCurrentMenuComponent = "EducationComponent";
+    this.router.navigateByUrl('education');
   }
 
   menu_experience_click() {
-    this.appMainCurrentMenu.AppMainCurrentMenuComponent = "ExperienceComponent";
+    this.router.navigateByUrl('experience');
   }
 
   menu_technologies_click() {
-    this.appMainCurrentMenu.AppMainCurrentMenuComponent = "TechnologiesComponent";
+    this.router.navigateByUrl('technologies');
   }
 
   menu_achievements_click() {
-    this.appMainCurrentMenu.AppMainCurrentMenuComponent = "AchievementsComponent";
+    this.router.navigateByUrl('achievements');;
   }
 
   menu_hobbies_click() {
-    this.appMainCurrentMenu.AppMainCurrentMenuComponent = "HobbiesComponent";
+    this.router.navigateByUrl('hobbies');
   }
 
 }

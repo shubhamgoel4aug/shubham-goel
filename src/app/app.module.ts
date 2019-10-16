@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppMainComponent } from './app-main/app-main.component';
@@ -12,6 +12,15 @@ import { AppMainTechnologiesComponent } from './app-main/app-main-technologies/a
 import { AppMainHobbiesComponent } from './app-main/app-main-hobbies/app-main-hobbies.component';
 import { AppMainAchievementsComponent } from './app-main/app-main-achievements/app-main-achievements.component';
 import { MenuComponentTracker } from './models/menu-component-tracker.model'
+
+const appRoutes: Routes = [
+  { path: '', component: AppMainIntroductionComponent },
+  { path: 'education', component: AppMainEducationComponent },
+  { path: 'experience', component: AppMainExperienceComponent },
+  { path: 'technologies', component: AppMainTechnologiesComponent },
+  { path: 'achievements', component: AppMainAchievementsComponent },
+  { path: 'hobbies', component: AppMainHobbiesComponent }
+];
 
 @NgModule({
   declarations: [
@@ -27,7 +36,7 @@ import { MenuComponentTracker } from './models/menu-component-tracker.model'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [MenuComponentTracker],
   bootstrap: [AppComponent]

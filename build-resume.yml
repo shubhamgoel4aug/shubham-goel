@@ -36,15 +36,6 @@ jobs:
       Contents: 'firebase.json'
       TargetFolder: '$(Build.BinariesDirectory)'
 
-  - task: ArchiveFiles@2
-    displayName: Archive application
-    inputs:
-      rootFolderOrFile: '$(Build.BinariesDirectory)'
-      includeRootFolder: true
-      archiveType: 'zip'
-      archiveFile: '$(Build.BinariesDirectory)/Resume.zip'
-      replaceExistingArchive: true
-
   - task: PublishBuildArtifacts@1
     displayName: Publish application artifact
     inputs:
