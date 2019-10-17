@@ -7,7 +7,7 @@ import { MenuComponentTracker} from '../models/menu-component-tracker.model'
   styleUrls: ['./app-main.component.css']
 })
 export class AppMainComponent implements OnInit {
-  constructor(private appMainCurrentMenu: MenuComponentTracker) { }
+  constructor(public appMainCurrentMenu: MenuComponentTracker) { }
 
   ngOnInit() {
   }

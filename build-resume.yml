@@ -9,6 +9,36 @@ jobs:
     vmImage: 'windows-latest'
   steps:
   - powershell:
-      Write-Host "Hello World"
-    displayName: "Test"
+      npm install
+    displayName: Restore npm modules
 
+  - powershell:
+      npm install -g @angular/cli@8.3.6
+    displayName: Install angular cli tools
+
+  - powershell:
+      ng build --prod
+    displayName: Build angular application
+
+  - task: CopyFiles@2
+    displayName: Copy dist (deploy) folder
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/dist'
+      Contents: '**'
+      TargetFolder: '$(Build.BinariesDirectory)/dist'
+      CleanTargetFolder: true
+      OverWrite: true
+
+  - task: CopyFiles@2
+    displayName: Copy firebase.json
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)'
+      Contents: 'firebase.json'
+      TargetFolder: '$(Build.BinariesDirectory)'
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish application artifact
+    inputs:
+      PathtoPublish: '$(Build.BinariesDirectory)'
+      ArtifactName: 'Resume'
+      publishLocation: 'Container'
