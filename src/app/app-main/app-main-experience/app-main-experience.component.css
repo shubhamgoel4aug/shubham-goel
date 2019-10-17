@@ -1,0 +1,26 @@
+.app-main-experience-menu-heading {
+    font-size: 1.7em;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.app-main-experience-menu-subject {
+    font-size: 1.3em;
+}
+
+.app-main-experience-menu-company-header {
+    font-size: 1.4em;
+}
+
+.app-main-experience-menu-company-timeline {
+    font-size: 1em;
+}
+
+.app-main-experience-menu-company-details {
+    font-size: 1.2em;
+}
+
+.app-main-experience-menu-company-details-explanation {
+    margin-left: 50px;
+}
