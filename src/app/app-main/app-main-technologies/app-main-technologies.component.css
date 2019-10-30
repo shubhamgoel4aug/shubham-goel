@@ -1,0 +1,18 @@
+.app-main-technologies-menu-heading {
+    font-size: 1.7em;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.app-main-technologies-menu-subject {
+    font-size: 1.3em;
+}
+
+.app-main-technologies-skills-details {
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px darkgray;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+}
