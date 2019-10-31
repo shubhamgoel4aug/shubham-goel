@@ -1,5 +1,8 @@
 .app-main-education-menu-heading {
     font-size: 1.7em;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .app-main-education-menu-subject {
