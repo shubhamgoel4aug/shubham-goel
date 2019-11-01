@@ -15,6 +15,9 @@
                 style="font-size:20px;color:#211F1F"></span></a>&nbsp;&nbsp;
         <a href="https://www.instagram.com/music._.shubham/"><span class="fa fa-instagram"
                 style="font-size:20px;color:#fb3958"></span></a>
-        <br>Developed By <b>Shubham Goel</b>. Hosted on <b>Google Firebase</b>. All rights reserved.
+        <br>Developed By <b>Shubham Goel</b>. Hosted on <b>Google Firebase</b>. All rights reserved.<br> Version:
+        <span *ngFor="let item of appVersion"> 
+            {{item.payload.doc.data().Major}}.{{item.payload.doc.data().Minor}}.{{item.payload.doc.data().Patch}}.{{item.payload.doc.data().Build}}
+        </span>
     </div>
 </div>

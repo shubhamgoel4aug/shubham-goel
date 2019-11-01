@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuComponentTracker} from '../models/menu-component-tracker.model'
+import { VersionService } from '../services/version.service'
 
 @Component({
   selector: 'app-main',
@@ -7,9 +7,12 @@ import { MenuComponentTracker} from '../models/menu-component-tracker.model'
   styleUrls: ['./app-main.component.css']
 })
 export class AppMainComponent implements OnInit {
-  constructor(public appMainCurrentMenu: MenuComponentTracker) { }
+  appVersion: any;
+
+  constructor(private versionService: VersionService) { }
 
   ngOnInit() {
+    console.log(this.versionService.getAppVersion().subscribe(x => {this.appVersion = x;}));
   }
 
 }
