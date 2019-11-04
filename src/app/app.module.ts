@@ -11,7 +11,11 @@ import { AppMainExperienceComponent } from './app-main/app-main-experience/app-m
 import { AppMainTechnologiesComponent } from './app-main/app-main-technologies/app-main-technologies.component';
 import { AppMainHobbiesComponent } from './app-main/app-main-hobbies/app-main-hobbies.component';
 import { AppMainAchievementsComponent } from './app-main/app-main-achievements/app-main-achievements.component';
-import { MenuComponentTracker } from './models/menu-component-tracker.model'
+import { MenuComponentTracker } from './models/menu-component-tracker.model';
+
+import { environment } from '../environments/environment';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 const appRoutes: Routes = [
   { path: '', component: AppMainIntroductionComponent },
@@ -36,7 +40,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [MenuComponentTracker],
   bootstrap: [AppComponent]
