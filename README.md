@@ -13,8 +13,8 @@ This repository contains an Angular 7 web application. The application is all ab
 ## Build
 
 - Perform:
-		npm install
-		ng build --prod
+  -		npm install
+  - 	ng build --prod
 
 # Docker Support
 
