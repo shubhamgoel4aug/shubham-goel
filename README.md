@@ -1,6 +1,8 @@
 # Introduction
 
-This repository contains an Angular 8 web application. The application is all about my professional Resume. Please feel free tp fork it and convert it to your own Resume.
+This repository contains an Angular 8 web application. The application is all about my professional Resume. Please feel free to fork it and convert it to your own Resume. 
+
+This application is hosted on **Google Firebase** http://shubham-goel.firebaseapp.com/
 
 # Building the application
 
