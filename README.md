@@ -17,6 +17,10 @@ This repository contains an Angular 7 web application. The application is all ab
   		npm install
   	 	ng build --prod
 
+- To serve on localhost (http://localhost:4200/) :
+
+		ng serve
+
 # Docker Support
 
 - Use the following command to build the docker image
