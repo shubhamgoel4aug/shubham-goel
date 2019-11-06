@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains an Angular 7 web application. The application is all about my professional Resume. Please feel free tp fork it and convert it to your own Resume.
+This repository contains an Angular 8 web application. The application is all about my professional Resume. Please feel free tp fork it and convert it to your own Resume.
 
 # Building the application
 
@@ -8,7 +8,7 @@ This repository contains an Angular 7 web application. The application is all ab
 
 - NPM
 - Git
-- Angular CLI 7
+- Angular CLI 8.3.6
 
 ## Build
 
