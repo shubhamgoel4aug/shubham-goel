@@ -1,3 +1,21 @@
+# Introduction
+
+This repository contains an Angular 7 web application. The application is all about my professional Resume. Please feel free tp fork it and convert it to your own Resume.
+
+# Building the application
+
+## Pre-requisites
+
+- NPM
+- Git
+- Angular CLI 7
+
+## Build
+
+- Perform:
+		npm install
+		ng build --prod
+
 # Docker Support
 
 - Use the following command to build the docker image
