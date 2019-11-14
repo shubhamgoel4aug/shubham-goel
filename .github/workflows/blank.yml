@@ -1,0 +1,15 @@
+name: Build-And-Package-App
+
+on: [push]
+
+jobs:
+  build_app:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
+    - name: Run a multi-line script
+      run: ng build --prod
