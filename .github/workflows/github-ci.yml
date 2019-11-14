@@ -12,6 +12,6 @@ jobs:
     - name: Install Angular CLI
       run: sudo npm install -g @angular/cli
     - name: Install npm Modules
-      run: sudo npm install -g @angular/cli
+      run: sudo npm install
     - name: Build Application
       run: ng build --prod
