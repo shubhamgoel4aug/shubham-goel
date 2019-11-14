@@ -11,5 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install Angular CLI
       run: sudo npm install -g @angular/cli
-    - name: Run a multi-line script
+    - name: Install npm Modules
+      run: sudo npm install -g @angular/cli
+    - name: Build Application
       run: ng build --prod
